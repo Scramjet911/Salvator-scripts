@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Check if both arguments are provided
+if [ $# -lt 1 ]; then
+    echo "Usage: loop <command_to_execute> <number_of_iterations> <time_to_wait>"
+    exit 1
+fi
+
+# Extract arguments
+command_to_execute=$1
+default_n=5
+n=${2:-$default_n}
+default_sleep_time=0.1
+sleep_time=${3:-$default_sleep_time}
+
+# Loop to execute the command 'n' times
+for ((i=1; i<=$n; i++))
+do
+    # Execute the provided command
+    $command_to_execute
+
+    sleep $sleep_time
+done
+
