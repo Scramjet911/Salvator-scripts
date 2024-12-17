@@ -1,0 +1,7 @@
+[user]
+	email = <Default Email>
+	name = <Default Name>
+[core]
+	excludesFile = ~/.gitignore
+[includeIf "gitdir:~/Documents/prp/"]
+	path = ./gitconfig/.gitconfig-personal

@@ -1,0 +1,6 @@
+[user]
+	name = scramjet911
+	email = 36035352+Scramjet911@users.noreply.github.com
+
+[core]
+	sshCommand = ssh -i ~/.ssh/id_scramjet

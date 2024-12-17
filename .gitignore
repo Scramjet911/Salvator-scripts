@@ -1,0 +1,5 @@
+# Secret keys
+browser.json
+oauth.json
+.env
+.cache
